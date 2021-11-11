@@ -1,0 +1,55 @@
+.main-bg {
+	background: var(--color-quinary);
+	margin: 7.5rem;
+}
+
+.main {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	padding: 24px;
+	margin-bottom: 4.7rem;
+}
+
+.date-mark {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.date-mark svg {
+	cursor: pointer;
+}
+
+.text-title h1 {
+	margin-bottom: 0.5rem;
+}
+
+.ativo {
+	opacity: 1;
+}
+
+.desativo {
+	opacity: 0;
+}
+
+@media screen and (max-width: 500px) {
+	.main-bg {
+		background: var(--color-quinary);
+		margin: 3.1rem 0rem;
+	}
+
+	.main {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+		padding: 24px;
+		margin-bottom: 3rem;
+	}
+
+	.date-mark {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+}

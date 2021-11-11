@@ -1,0 +1,47 @@
+:root {
+	--color-primary: #574ae8;
+	--color-primary-light: #3ea1db;
+	--color-primary-dark: #574ae8;
+	--color-secondary: #475461;
+	--color-tertiary: #b6b6b6;
+	--color-quaternary: #f3f5f7;
+	--color-quinary: #ffffff;
+	--color-text-dark: #313131;
+}
+
+.color-1 {
+	color: var(--color-primary);
+}
+
+.color-2 {
+	color: var(--color-primary-light);
+}
+
+.color-3 {
+	color: var(--color-primary-dark);
+}
+
+.color-4 {
+	color: var(--color-secondary);
+}
+
+.color-5 {
+	color: var(--color-tertiary);
+}
+
+.color-6 {
+	color: var(--color-quaternary);
+}
+
+.color-7 {
+	color: var(--color-quinary);
+}
+
+.color-8 {
+	color: var(--color-text-dark);
+}
+
+.ativoSVG {
+	fill: #074ee8;
+	color: #074ee8;
+}

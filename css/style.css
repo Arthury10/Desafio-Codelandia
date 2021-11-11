@@ -1,0 +1,14 @@
+/*global*/
+@import url('global/global.css');
+
+/*cores*/
+@import url('utility/color.css');
+
+/*typography*/
+@import url('utility/typography.css');
+
+/*header*/
+@import url('global/header.css');
+
+/*home*/
+@import url('home/home.css');

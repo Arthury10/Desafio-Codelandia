@@ -1,0 +1,52 @@
+.header-bg {
+	background: linear-gradient(
+		90deg,
+		var(--color-primary) 0%,
+		var(--color-primary-light) 100%
+	);
+}
+
+.header {
+	height: 250px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.logo {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.search-container {
+	position: relative;
+}
+
+.search {
+	background: rgba(255, 255, 255, 0.2);
+	padding: 22px 64px;
+	border: 0;
+	border-radius: 5px;
+	width: 100%;
+	color: var(--color-quinary);
+	font-weight: 500;
+	font-family: 'Inter', sans-serif;
+}
+
+.search:focus {
+	outline: none;
+}
+
+.label-search::before {
+	content: ' ';
+	color: aliceblue;
+	display: block;
+	width: 24px;
+	height: 24px;
+	background: url('../../assets/Vector.svg') no-repeat center center;
+	position: absolute;
+	top: 18px;
+	left: 17px;
+	cursor: pointer;
+}

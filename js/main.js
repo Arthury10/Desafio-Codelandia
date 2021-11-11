@@ -12,7 +12,7 @@ function initAnimacaoScroll() {
 	const sections = document.querySelectorAll('.js-scroll')
 
 	if (sections.length) {
-		const windowMetade = window.innerHeight * 0.85
+		const windowMetade = window.innerHeight * 0.75
 
 		function animaScroll() {
 			sections.forEach(section => {

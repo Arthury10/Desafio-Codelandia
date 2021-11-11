@@ -1,5 +1,4 @@
 .main-bg {
-	background: var(--color-quinary);
 	margin: 7.5rem;
 }
 
@@ -9,6 +8,9 @@
 	gap: 20px;
 	padding: 24px;
 	margin-bottom: 4.7rem;
+	background: var(--color-quinary);
+	border-radius: 5px;
+	box-shadow: 0px 0px 10px rgba(19, 19, 31, 0.05);
 }
 
 .date-mark {

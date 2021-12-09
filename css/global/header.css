@@ -38,6 +38,10 @@
 	outline: none;
 }
 
+.search::placeholder {
+	color: var(--color-quinary);
+}
+
 .label-search::before {
 	content: ' ';
 	color: aliceblue;

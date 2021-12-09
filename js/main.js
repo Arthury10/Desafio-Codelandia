@@ -6,7 +6,7 @@ function load() {
 		document.querySelector('.loading').classList = 'loading'
 		document.querySelector('.loading').classList = 'load'
 		document.querySelector('#bar-loading').classList.add('desactiveLoad')
-	}, 4000)
+	}, 0)
 }
 load()
 
@@ -25,7 +25,6 @@ function arrowToUp() {
 arrowToUp()
 
 //https://www.infoq.com/br/WebAPI/news/
-
 fetch(
 	'https://newsapi.org/v2/everything?q=apple&from=2021-12-08&to=2021-12-08&sortBy=popularity&apiKey=fae2462f1349499a808d24233b2a1935'
 )

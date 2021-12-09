@@ -1,34 +1,5 @@
 /*Mark Favorite*/
 
-/*Animando scroll mouse*/
-function initAnimacaoScroll() {
-	const sections = document.querySelectorAll('.js-scroll')
-
-	if (sections.length) {
-		const windowMetade = window.innerHeight * 0.75
-
-		function animaScroll() {
-			sections.forEach(section => {
-				section.classList.add('desativo')
-				const sectionTop = section.getBoundingClientRect().top
-				const isSectionVisible = sectionTop - windowMetade < 0
-				if (isSectionVisible) {
-					section.classList.add('ativo')
-					section.classList.remove('desativo')
-				} else {
-					section.classList.remove('ativo')
-				}
-			})
-		}
-
-		animaScroll()
-
-		window.addEventListener('scroll', animaScroll)
-	}
-}
-
-initAnimacaoScroll()
-
 /*puxando noticias pela api techtudo*/
 //https://www.infoq.com/br/WebAPI/news/
 
@@ -42,9 +13,10 @@ fetch(
 		const { articles } = body
 		const noticias = document.querySelector('.main-bg')
 		articles.forEach(item => {
-			const { title, url, description, publishedAt } = item
+			const { title, url, description, publishedAt, urlToImage } = item
 			const template = `
 			<div class="main container js-scroll news">
+			<img src="${urlToImage}" alt="${title}">
 			<div class="date-mark">
 				<span class="color-5">${publishedAt}</span>
 				<svg
@@ -85,6 +57,34 @@ fetch(
 					item.classList.toggle('ativoSVG')
 				})
 			})
+			/*Animando scroll mouse*/
+			function initAnimacaoScroll() {
+				const sections = document.querySelectorAll('.js-scroll')
+
+				if (sections.length) {
+					const windowMetade = window.innerHeight * 0.75
+
+					function animaScroll() {
+						sections.forEach(section => {
+							section.classList.add('desativo')
+							const sectionTop = section.getBoundingClientRect().top
+							const isSectionVisible = sectionTop - windowMetade < 0
+							if (isSectionVisible) {
+								section.classList.add('ativo')
+								section.classList.remove('desativo')
+							} else {
+								section.classList.remove('ativo')
+							}
+						})
+					}
+
+					animaScroll()
+
+					window.addEventListener('scroll', animaScroll)
+				}
+			}
+
+			initAnimacaoScroll()
 
 			const input = document.querySelector('#search')
 			input.addEventListener('keyup', function (e) {

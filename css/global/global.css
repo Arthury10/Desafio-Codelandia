@@ -6,13 +6,51 @@
 	list-style: none;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	font-family: 'Inter', sans-serif;
 	background: var(--color-quaternary);
+	-webkit-font-smoothing: antialiased;
 }
 
 .container {
 	width: 90%;
 	max-width: 900px;
 	margin: 0 auto;
+}
+
+/*back-to-top*/
+.back-to-top {
+	background: var(--color-primary);
+
+	position: fixed;
+	right: 1rem;
+	bottom: 1rem;
+	z-index: 9999;
+
+	padding: 0.5rem;
+	clip-path: circle(50%);
+
+	font-size: 1.5rem;
+	line-height: 0;
+
+	visibility: hidden;
+	opacity: 0;
+
+	transition: 0.3s;
+	transform: translateY(100%);
+}
+
+.back-to-top img {
+	width: 1.5rem;
+	height: 1.5rem;
+}
+
+.back-to-top.show {
+	visibility: visible;
+	opacity: 1;
+	transform: translateY(0);
 }

@@ -20,3 +20,15 @@
 	font-size: 1.125rem;
 	line-height: 1.2;
 }
+
+footer h3 {
+	text-align: center;
+}
+
+footer a {
+	text-decoration: underline;
+}
+
+footer a:hover {
+	color: var(--color-primary);
+}

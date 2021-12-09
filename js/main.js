@@ -1,6 +1,29 @@
-/*Mark Favorite*/
+function load() {
+	var i = setInterval(function () {
+		clearInterval(i)
 
-/*puxando noticias pela api techtudo*/
+		// O código desejado é apenas isto:
+		document.querySelector('.loading').classList = 'loading'
+		document.querySelector('.loading').classList = 'load'
+		document.querySelector('#bar-loading').classList.add('desactiveLoad')
+	}, 4000)
+}
+load()
+
+/*ARROW TO UP*/
+function arrowToUp() {
+	const arrow = document.querySelector('.back-to-top')
+
+	window.addEventListener('scroll', () => {
+		if (window.pageYOffset > 100) {
+			arrow.classList.add('show')
+		} else {
+			arrow.classList.remove('show')
+		}
+	})
+}
+arrowToUp()
+
 //https://www.infoq.com/br/WebAPI/news/
 
 fetch(
@@ -95,7 +118,6 @@ fetch(
 					let description = item
 						.querySelector('.news-description')
 						.innerText.toLowerCase()
-					//tecnologias
 					if (title.indexOf(inputValue) != -1) {
 						item.style.display = 'flex'
 					} else if (description.indexOf(inputValue) != -1) {

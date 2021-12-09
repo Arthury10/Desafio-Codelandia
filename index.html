@@ -18,26 +18,73 @@
 		<script src="https://unpkg.com/feather-icons"></script>
 	</head>
 	<body>
-		<header class="header-bg">
-			<div class="header container">
-				<div class="logo">
-					<h3 class="color-7 h3">Codelândia</h3>
-					<h3 class="color-7 h3">blog</h3>
+		<div id="particles-container"></div>
+		<div id="bar-loading">
+			<div class="progress-bar"></div>
+		</div>
+		<!--loading-->
+		<div class="loading">
+			<header id="header" class="header-bg">
+				<div class="header container">
+					<div class="logo">
+						<h3 class="color-7 h3">Codelândia</h3>
+						<h3 class="color-7 h3">blog</h3>
+					</div>
+					<div class="search-container">
+						<label class="label-search" for="search">
+							<input
+								class="search"
+								type="search"
+								placeholder="Pesquisar no blog"
+								id="search"
+								name="search"
+							/>
+						</label>
+					</div>
 				</div>
-				<div class="search-container">
-					<label class="label-search" for="search">
-						<input
-							class="search"
-							type="search"
-							placeholder="Pesquisar no blog"
-							id="search"
-							name="search"
-						/>
-					</label>
-				</div>
+			</header>
+			<main class="main-bg"></main>
+			<footer class="container">
+				<h3 class="h3">
+					<a href="https://arthury10.github.io/Arthury10.io/" target="_blanck"
+						>Arthur Ropke</a
+					>©All rights reserved.
+				</h3>
+			</footer>
+			<!--display-fixed-->
+			<!--arrowtotop-->
+			<a href="#header" class="back-to-top" data-menu="suave"
+				><img src="assets/arrow-up.svg" alt=""
+			/></a>
+			<!--arrowtotop-->
+			<div class="fixed-info">
+				<ul>
+					<li>
+						<a href="https://github.com/Arthury10"
+							><img src="assets/about/github.svg" alt="github"
+						/></a>
+					</li>
+					<li>
+						<a href="https://www.linkedin.com/in/arthur-ropke/"
+							><img src="assets/about/linkedin.svg" alt="linkedin"
+						/></a>
+					</li>
+					<li>
+						<a href="https://www.instagram.com/arthurropkede/?hl=pt-br"
+							><img src="assets/about/instagram.svg" alt="instagram"
+						/></a>
+					</li>
+					<li>
+						<a href="https://arthury10.github.io/Arthury10.io/"
+							><img src="assets/about/world.svg" alt="portfolio"
+						/></a>
+					</li>
+				</ul>
 			</div>
-		</header>
-		<main class="main-bg"></main>
+		</div>
+		<!--js-->
+		<script src="js/plugins/particles.js"></script>
+		<script src="js/particles.js"></script>
 		<script src="js/main.js">
 			feather.replace() // Para ativar as imagens dentro dos botões
 		</script>
